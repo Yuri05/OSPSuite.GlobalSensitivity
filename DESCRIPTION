@@ -1,7 +1,7 @@
 Type: Package
 Package: ospsuite.globalsensitivity
 Title: TODO
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person("Open-Systems-Pharmacology Community", role = c("cph", "fnd")),
     person("XXXXXXXXXXX", "XXXXXXXXXXXX", , "xxxxx@xxxxx.com", role = c("aut", "cre"))
@@ -15,7 +15,6 @@ BugReports:
     https://github.com/Open-Systems-Pharmacology/OSPSuite.GlobalSensitivity/issues
 Depends: 
     R (>= 4.1)
-Imports:
 Suggests: 
     knitr,
     rmarkdown,
