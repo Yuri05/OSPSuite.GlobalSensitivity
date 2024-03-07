@@ -4,14 +4,14 @@ template:
   bootstrap: 5
 
 development:
-  mode: devel
+  mode: !expr Sys.getenv('PKGDOWN_MODE')
 
 articles:
   - title: XXXXXX
     navbar: XXXXXX
     desc: XXXXXX
     contents:
-    - vignette1_XXXXXXXXXXXXXXXXXXXXX
+#    - vignette1_XXXXXXXXXXXXXXXXXXXXX
 
 reference:
 - title: "XXXXXXXXXXXXXXXXXXX"
