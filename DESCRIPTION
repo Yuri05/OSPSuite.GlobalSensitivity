@@ -1,0 +1,29 @@
+Type: Package
+Package: ospsuite.globalsensitivity
+Title: TODO
+Version: 0.1.0
+Authors@R: c(
+    person("Open-Systems-Pharmacology Community", role = c("cph", "fnd")),
+    person("XXXXXXXXXXX", "XXXXXXXXXXXX", , "xxxxx@xxxxx.com", role = c("aut", "cre"))
+  )
+Maintainer: XXXXXXXXXXX XXXXXXXXXXX <xxxxx@xxxxx.com>
+Description: TODO
+License: GPL-2
+URL: https://github.com/Open-Systems-Pharmacology/OSPSuite.GlobalSensitivitys,
+    https://www.open-systems-pharmacology.org/OSPSuite.GlobalSensitivity/
+BugReports: 
+    https://github.com/Open-Systems-Pharmacology/OSPSuite.GlobalSensitivity/issues
+Depends: 
+    R (>= 4.1)
+Imports:
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Collate: 
+    'dummy.R'
