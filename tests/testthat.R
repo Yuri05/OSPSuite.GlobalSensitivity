@@ -1,4 +1,3 @@
 library(testthat)
-library(ospsuite.plots)
 
-test_check("ospsuite.plots", encoding = "utf-8")
+test_check("ospsuite.globalsensitivity", encoding = "utf-8")
