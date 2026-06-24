@@ -12,11 +12,27 @@ permissions:
   actions: read
   pull-requests: read
 
-env:
-  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
+  test_firewall_2025_vs2026:
+    runs-on: windows-2025-vs2026
+    steps:
+      - name: Network diagnostic (temporary)
+        shell: pwsh
+        run: |
+          Resolve-DnsName api.github.com
+          curl.exe -v https://api.github.com/zen
+          curl.exe -s https://api.ipify.org   # shows the outbound IP
+
+  test_firewall_2025:
+    runs-on: windows-2025
+    steps:
+      - name: Network diagnostic (temporary)
+        shell: pwsh
+        run: |
+          Resolve-DnsName api.github.com
+          curl.exe -v https://api.github.com/zen
+          curl.exe -s https://api.ipify.org   # shows the outbound IP
+  
   bump-dev-version:
     if: github.event_name != 'pull_request'
     uses: Open-Systems-Pharmacology/Workflows/.github/workflows/bump_dev_version_tag_branch.yaml@main
